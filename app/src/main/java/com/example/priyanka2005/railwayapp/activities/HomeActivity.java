@@ -1,6 +1,7 @@
 package com.example.priyanka2005.railwayapp.activities;
 
 import android.support.annotation.NonNull;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -22,6 +23,8 @@ import com.example.priyanka2005.railwayapp.fragments_nav.WatcFragment;
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawerLayout;
+    private CollapsingToolbarLayout collapsingToolbarLayout;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +32,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_home);
 
 
-        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        collapsingToolbarLayout = findViewById(R.id.collapsingToolbar);
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
@@ -65,21 +69,27 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         switch(item.getItemId()){
             case R.id.nav_home:
+                collapsingToolbarLayout.setTitle("Home");
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
                 break;
             case R.id.nav_live:
+                collapsingToolbarLayout.setTitle("Live");
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new LiveFragment()).commit();
                 break;
             case R.id.nav_headquarters:
+                collapsingToolbarLayout.setTitle("Headquarters");
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HeadquartersFragment()).commit();
                 break;
             case R.id.nav_division:
+                collapsingToolbarLayout.setTitle("Division");
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new DivisionFragment()).commit();
                 break;
             case R.id.nav_watc:
+                collapsingToolbarLayout.setTitle("Workshops and Training");
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new WatcFragment()).commit();
                 break;
             case R.id.nav_constructions:
+                collapsingToolbarLayout.setTitle("Constructions");
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ConstuctionsFragment()).commit();
                 break;
             case R.id.nav_about:
