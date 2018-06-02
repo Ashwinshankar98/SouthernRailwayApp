@@ -311,7 +311,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundpurple"
+                    android:background="@drawable/circlebackgroundlightindogo"
                     android:src="@drawable/dash1"
                     android:padding="10dp" />
                 <TextView
@@ -352,7 +352,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundblue"
+                    android:background="@drawable/circlebackgroundleafgreen"
                     android:src="@drawable/dash2"
                     android:padding="10dp" />
                 <TextView
@@ -404,7 +404,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundorange"
+                    android:background="@drawable/circlebackgroundbrown"
                     android:src="@drawable/dash3"
                     android:padding="10dp" />
                 <TextView
@@ -445,7 +445,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundgreen"
+                    android:background="@drawable/circlebackgrounddarkpink"
                     android:src="@drawable/dash4"
                     android:padding="10dp" />
                 <TextView
@@ -497,7 +497,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundyellow"
+                    android:background="@drawable/circlebackgrounddarkcyan"
                     android:src="@drawable/dash5"
                     android:padding="10dp" />
                 <TextView
