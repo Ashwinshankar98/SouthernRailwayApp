@@ -20,5 +20,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="s_t_failures"><![CDATA[S&T Failures]]></string>
+    <string name="get_details_on_current_s_t_failures"><![CDATA[Get details on current S&T Failures]]></string>
 
 </resources>
